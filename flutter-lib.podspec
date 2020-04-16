@@ -29,8 +29,21 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  
+#  s.static_framework = true
 
   s.source_files = 'flutter-lib/Classes/**/*'
+  
+  p = Dir::open("ios_frameworks")
+  arr = Array.new
+  p.each do |f|
+    if f == '.' || f == '..'
+    else
+        arr.push('ios_frameworks/'+f)
+    end
+  end
+
+  s.ios.vendored_frameworks = arr
   
   # s.resource_bundles = {
   #   'flutter-lib' => ['flutter-lib/Assets/*.png']
