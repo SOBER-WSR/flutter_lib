@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wsr/flutter-lib'
+  s.homepage         = 'https://github.com/SOBER-WSR/flutter_lib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wsr' => '1277466495@qq.com' }
-  s.source           = { :git => 'https://github.com/wsr/flutter-lib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SOBER-WSR/flutter_lib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
