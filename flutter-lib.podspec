@@ -35,16 +35,18 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'flutter-lib/Classes/**/*'
   
-  p = Dir::open("ios_frameworks")
-  arr = Array.new
-  p.each do |f|
-    if f == '.' || f == '..'
-    else
-        arr.push('ios_frameworks/'+f)
-    end
-  end
-
-  s.ios.vendored_frameworks = arr
+#  p = Dir::open("ios_frameworks")
+#  arr = Array.new
+#  p.each do |f|
+#    if f == '.' || f == '..'
+#    else
+#        arr.push('ios_frameworks/'+f)
+#    end
+#  end
+#
+#  s.ios.vendored_frameworks = arr
+  
+  s.ios.vendored_frameworks = 'ios_frameworks/*'
   
   # s.resource_bundles = {
   #   'flutter-lib' => ['flutter-lib/Assets/*.png']
